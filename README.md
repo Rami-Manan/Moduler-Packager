@@ -252,11 +252,11 @@ If you find this project useful:
 
 ## 👤 Author
 
-**[Your Name]**
+**[Manan Rami]**
 
 🐍 Python Learner | 💻 Programmer
 
-- GitHub: [Your GitHub Profile](https://github.com/YOUR-USERNAME)
+- GitHub: [Your GitHub Profile](https://github.com/)
 
 > Replace the author name, GitHub username, repository URL, and example filename with your own project details before publishing.
 
