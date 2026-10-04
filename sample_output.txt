@@ -1,0 +1,477 @@
+========================================
+Welcome to Multi-Utility Toolkit
+========================================
+
+Choose an option:
+1. Datetime and Time Operations
+2. Mathematical Operations
+3. Random Data Generation
+4. Generate Unique Identifiers (UUID)
+5. File Operations (Custom Module)
+6. Explore Module Attributes (dir())
+7. Exit
+========================================
+Enter your choice: 
+Datetime and Time Operations:
+1. Display current date and time
+2. Calculate difference between two dates/times
+3. Format date into custom format
+4. Stopwatch
+5. Countdown Timer
+6. Working Hours Calculator
+7. Back to Main Menu
+Enter your choice: 
+Current Date and Time: 2026-10-04 16:12:45
+========================================
+
+Datetime and Time Operations:
+1. Display current date and time
+2. Calculate difference between two dates/times
+3. Format date into custom format
+4. Stopwatch
+5. Countdown Timer
+6. Working Hours Calculator
+7. Back to Main Menu
+Enter your choice: 
+Enter the first date (YYYY-MM-DD): Enter the second date (YYYY-MM-DD): Difference: 10 days
+========================================
+
+Datetime and Time Operations:
+1. Display current date and time
+2. Calculate difference between two dates/times
+3. Format date into custom format
+4. Stopwatch
+5. Countdown Timer
+6. Working Hours Calculator
+7. Back to Main Menu
+Enter your choice: 
+Enter a date (YYYY-MM-DD): Example formats: %d/%m/%Y  or  %A, %d %B %Y
+Enter the format: Formatted date: Saturday, 04 January 2025
+========================================
+
+Datetime and Time Operations:
+1. Display current date and time
+2. Calculate difference between two dates/times
+3. Format date into custom format
+4. Stopwatch
+5. Countdown Timer
+6. Working Hours Calculator
+7. Back to Main Menu
+Enter your choice: Press Enter to start the stopwatch...Press Enter to stop...Time taken: 0.00 seconds
+========================================
+
+Datetime and Time Operations:
+1. Display current date and time
+2. Calculate difference between two dates/times
+3. Format date into custom format
+4. Stopwatch
+5. Countdown Timer
+6. Working Hours Calculator
+7. Back to Main Menu
+Enter your choice: 
+Enter seconds for countdown: 2
+1
+Time's up!
+========================================
+
+Datetime and Time Operations:
+1. Display current date and time
+2. Calculate difference between two dates/times
+3. Format date into custom format
+4. Stopwatch
+5. Countdown Timer
+6. Working Hours Calculator
+7. Back to Main Menu
+Enter your choice: 
+Enter start time (HH:MM, 24 hour): Enter end time (HH:MM, 24 hour): Working hours: 8.50
+========================================
+
+Datetime and Time Operations:
+1. Display current date and time
+2. Calculate difference between two dates/times
+3. Format date into custom format
+4. Stopwatch
+5. Countdown Timer
+6. Working Hours Calculator
+7. Back to Main Menu
+Enter your choice: 
+Choose an option:
+1. Datetime and Time Operations
+2. Mathematical Operations
+3. Random Data Generation
+4. Generate Unique Identifiers (UUID)
+5. File Operations (Custom Module)
+6. Explore Module Attributes (dir())
+7. Exit
+========================================
+Enter your choice: 
+Mathematical Operations:
+1. Calculate Factorial
+2. Solve Compound Interest
+3. Trigonometric Calculations
+4. Area of Geometric Shapes
+5. Logarithm
+6. Unit Conversions
+7. GCD, LCM and Prime Check
+8. Back to Main Menu
+Enter your choice: 
+Enter a number: Factorial: 120
+========================================
+
+Mathematical Operations:
+1. Calculate Factorial
+2. Solve Compound Interest
+3. Trigonometric Calculations
+4. Area of Geometric Shapes
+5. Logarithm
+6. Unit Conversions
+7. GCD, LCM and Prime Check
+8. Back to Main Menu
+Enter your choice: 
+Enter principal amount: Enter rate of interest (in %): Enter time (in years): Total Amount: 1102.50
+Compound Interest: 102.50
+========================================
+
+Mathematical Operations:
+1. Calculate Factorial
+2. Solve Compound Interest
+3. Trigonometric Calculations
+4. Area of Geometric Shapes
+5. Logarithm
+6. Unit Conversions
+7. GCD, LCM and Prime Check
+8. Back to Main Menu
+Enter your choice: 
+Enter angle in degrees: sin = 0.5000
+cos = 0.8660
+tan = 0.5774
+========================================
+
+Mathematical Operations:
+1. Calculate Factorial
+2. Solve Compound Interest
+3. Trigonometric Calculations
+4. Area of Geometric Shapes
+5. Logarithm
+6. Unit Conversions
+7. GCD, LCM and Prime Check
+8. Back to Main Menu
+Enter your choice: 
+1. Circle  2. Rectangle  3. Triangle  4. Square
+Choose a shape: Enter radius: Area: 28.27
+========================================
+
+Mathematical Operations:
+1. Calculate Factorial
+2. Solve Compound Interest
+3. Trigonometric Calculations
+4. Area of Geometric Shapes
+5. Logarithm
+6. Unit Conversions
+7. GCD, LCM and Prime Check
+8. Back to Main Menu
+Enter your choice: 
+Enter a positive number: Enter base (0 for natural log): Logarithm: 2.0000
+========================================
+
+Mathematical Operations:
+1. Calculate Factorial
+2. Solve Compound Interest
+3. Trigonometric Calculations
+4. Area of Geometric Shapes
+5. Logarithm
+6. Unit Conversions
+7. GCD, LCM and Prime Check
+8. Back to Main Menu
+Enter your choice: 
+Unit Conversions:
+1. Kilometres to Miles
+2. Miles to Kilometres
+3. Kilograms to Pounds
+4. Pounds to Kilograms
+5. Celsius to Fahrenheit
+6. Fahrenheit to Celsius
+7. Back
+Enter your choice: Enter value: Result: 6.21
+========================================
+
+Unit Conversions:
+1. Kilometres to Miles
+2. Miles to Kilometres
+3. Kilograms to Pounds
+4. Pounds to Kilograms
+5. Celsius to Fahrenheit
+6. Fahrenheit to Celsius
+7. Back
+Enter your choice: 
+Mathematical Operations:
+1. Calculate Factorial
+2. Solve Compound Interest
+3. Trigonometric Calculations
+4. Area of Geometric Shapes
+5. Logarithm
+6. Unit Conversions
+7. GCD, LCM and Prime Check
+8. Back to Main Menu
+Enter your choice: 
+Enter first number: Enter second number: GCD: 6  LCM: 36
+Enter a number to check prime: 29 is prime
+========================================
+
+Mathematical Operations:
+1. Calculate Factorial
+2. Solve Compound Interest
+3. Trigonometric Calculations
+4. Area of Geometric Shapes
+5. Logarithm
+6. Unit Conversions
+7. GCD, LCM and Prime Check
+8. Back to Main Menu
+Enter your choice: 
+Choose an option:
+1. Datetime and Time Operations
+2. Mathematical Operations
+3. Random Data Generation
+4. Generate Unique Identifiers (UUID)
+5. File Operations (Custom Module)
+6. Explore Module Attributes (dir())
+7. Exit
+========================================
+Enter your choice: 
+Random Data Generation:
+1. Generate Random Number
+2. Generate Random List
+3. Create Random Password
+4. Generate Random OTP
+5. Random Sampling from Data
+6. Dice Game
+7. Back to Main Menu
+Enter your choice: 
+Enter minimum: Enter maximum: Random Number: 75
+========================================
+
+Random Data Generation:
+1. Generate Random Number
+2. Generate Random List
+3. Create Random Password
+4. Generate Random OTP
+5. Random Sampling from Data
+6. Dice Game
+7. Back to Main Menu
+Enter your choice: 
+How many numbers: Enter minimum: Enter maximum: Random List: [22, 17, 29, 40, 38]
+========================================
+
+Random Data Generation:
+1. Generate Random Number
+2. Generate Random List
+3. Create Random Password
+4. Generate Random OTP
+5. Random Sampling from Data
+6. Dice Game
+7. Back to Main Menu
+Enter your choice: 
+Enter password length: Generated Password: ztQ6SLh3
+========================================
+
+Random Data Generation:
+1. Generate Random Number
+2. Generate Random List
+3. Create Random Password
+4. Generate Random OTP
+5. Random Sampling from Data
+6. Dice Game
+7. Back to Main Menu
+Enter your choice: 
+Enter number of digits: Generated OTP: 429641
+========================================
+
+Random Data Generation:
+1. Generate Random Number
+2. Generate Random List
+3. Create Random Password
+4. Generate Random OTP
+5. Random Sampling from Data
+6. Dice Game
+7. Back to Main Menu
+Enter your choice: 
+Enter items separated by commas: How many items to pick: Sample: ['e', 'd']
+========================================
+
+Random Data Generation:
+1. Generate Random Number
+2. Generate Random List
+3. Create Random Password
+4. Generate Random OTP
+5. Random Sampling from Data
+6. Dice Game
+7. Back to Main Menu
+Enter your choice: 
+How many rounds: Round 1 - You: 3 Computer: 2 -> You win
+Round 2 - You: 1 Computer: 6 -> Computer wins
+========================================
+
+Random Data Generation:
+1. Generate Random Number
+2. Generate Random List
+3. Create Random Password
+4. Generate Random OTP
+5. Random Sampling from Data
+6. Dice Game
+7. Back to Main Menu
+Enter your choice: 
+Choose an option:
+1. Datetime and Time Operations
+2. Mathematical Operations
+3. Random Data Generation
+4. Generate Unique Identifiers (UUID)
+5. File Operations (Custom Module)
+6. Explore Module Attributes (dir())
+7. Exit
+========================================
+Enter your choice: 
+Generate Unique Identifiers:
+1. Generate UUID
+2. Generate Invoice ID
+3. Generate Session ID
+4. Back to Main Menu
+Enter your choice: Generated UUID: 257258e5-bf02-48ff-87be-bc57ef34c759
+========================================
+
+Generate Unique Identifiers:
+1. Generate UUID
+2. Generate Invoice ID
+3. Generate Session ID
+4. Back to Main Menu
+Enter your choice: Generated Invoice ID: INV-8113af0c-e2d9-4027-bdad-ee7ad82bce3b
+========================================
+
+Generate Unique Identifiers:
+1. Generate UUID
+2. Generate Invoice ID
+3. Generate Session ID
+4. Back to Main Menu
+Enter your choice: Generated Session ID: SES-e2bd919d-cf76-4312-a764-74c500708155
+========================================
+
+Generate Unique Identifiers:
+1. Generate UUID
+2. Generate Invoice ID
+3. Generate Session ID
+4. Back to Main Menu
+Enter your choice: 
+Choose an option:
+1. Datetime and Time Operations
+2. Mathematical Operations
+3. Random Data Generation
+4. Generate Unique Identifiers (UUID)
+5. File Operations (Custom Module)
+6. Explore Module Attributes (dir())
+7. Exit
+========================================
+Enter your choice: 
+File Operations:
+1. Create a new file
+2. Write to a file
+3. Read from a file
+4. Append to a file
+5. Replace text in a file
+6. Back to Main Menu
+Enter your choice: 
+Enter file name: File created successfully!
+========================================
+
+File Operations:
+1. Create a new file
+2. Write to a file
+3. Read from a file
+4. Append to a file
+5. Replace text in a file
+6. Back to Main Menu
+Enter your choice: 
+Enter file name: Enter data to write: Data written successfully!
+========================================
+
+File Operations:
+1. Create a new file
+2. Write to a file
+3. Read from a file
+4. Append to a file
+5. Replace text in a file
+6. Back to Main Menu
+Enter your choice: 
+Enter file name: File Content:
+This is a sample file.
+
+========================================
+
+File Operations:
+1. Create a new file
+2. Write to a file
+3. Read from a file
+4. Append to a file
+5. Replace text in a file
+6. Back to Main Menu
+Enter your choice: 
+Enter file name: Enter data to append: Data appended successfully!
+========================================
+
+File Operations:
+1. Create a new file
+2. Write to a file
+3. Read from a file
+4. Append to a file
+5. Replace text in a file
+6. Back to Main Menu
+Enter your choice: 
+Enter file name: Enter text to replace: Enter new text: 1 replacement(s) done.
+========================================
+
+File Operations:
+1. Create a new file
+2. Write to a file
+3. Read from a file
+4. Append to a file
+5. Replace text in a file
+6. Back to Main Menu
+Enter your choice: 
+Enter file name: File Content:
+This is a demo file.
+Appended line.
+
+========================================
+
+File Operations:
+1. Create a new file
+2. Write to a file
+3. Read from a file
+4. Append to a file
+5. Replace text in a file
+6. Back to Main Menu
+Enter your choice: 
+Choose an option:
+1. Datetime and Time Operations
+2. Mathematical Operations
+3. Random Data Generation
+4. Generate Unique Identifiers (UUID)
+5. File Operations (Custom Module)
+6. Explore Module Attributes (dir())
+7. Exit
+========================================
+Enter your choice: 
+Explore Module Attributes:
+Enter module name to explore: Available Attributes in math module:
+['acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'comb', 'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 'exp2', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 'sinh', 'sqrt', 'sumprod', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
+
+Choose an option:
+1. Datetime and Time Operations
+2. Mathematical Operations
+3. Random Data Generation
+4. Generate Unique Identifiers (UUID)
+5. File Operations (Custom Module)
+6. Explore Module Attributes (dir())
+7. Exit
+========================================
+Enter your choice: ========================================
+Thank you for using the Multi-Utility Toolkit!
+========================================
