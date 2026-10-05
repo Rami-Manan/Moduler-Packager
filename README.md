@@ -1,271 +1,873 @@
-<div align="center">
+# 🧰 Moduler-Packager
 
-# 📔 Personal Journal Manager
+### Multi-Utility Python Toolkit
 
-### Write Your Thoughts. Save Your Memories. 💙
+A beginner-friendly, modular command-line toolkit that combines **date & time utilities, mathematical calculations, random data generation, unique ID generation, file operations, and Python module exploration** into one interactive application.
 
-A beginner-friendly, menu-driven Python application for creating, viewing, searching, and deleting personal journal entries. Each entry is saved with a timestamp in a local text file.
-
-</div>
+> **Write less code. Use reusable modules. Build more utilities.**
 
 ---
 
 ## 📌 Table of Contents
 
-- [About the Project](#-about-the-project)
-- [Features](#-features)
-- [How It Works](#-how-it-works)
-- [Technologies Used](#-technologies-used)
-- [Project Structure](#-project-structure)
-- [Requirements](#-requirements)
-- [Installation and Setup](#-installation-and-setup)
-- [Usage](#-usage)
-- [Example Console Interaction](#-example-console-interaction)
-- [Learning Outcomes](#-learning-outcomes)
-- [Future Improvements](#-future-improvements)
-- [Why This Project?](#-why-this-project)
-- [Support](#-support)
-- [Author](#-author)
+- [✨ About the Project](#-about-the-project)
+- [🚀 Features](#-features)
+- [🧩 Available Modules](#-available-modules)
+- [🛠️ Technologies Used](#️-technologies-used)
+- [📂 Project Structure](#-project-structure)
+- [⚙️ Requirements](#️-requirements)
+- [📥 Installation](#-installation)
+- [▶️ How to Run](#️-how-to-run)
+- [🖥️ Main Menu](#️-main-menu)
+- [📅 Datetime & Time Operations](#-datetime--time-operations)
+- [🧮 Mathematical Operations](#-mathematical-operations)
+- [🎲 Random Data Generation](#-random-data-generation)
+- [🆔 Unique Identifier Generation](#-unique-identifier-generation)
+- [📁 File Operations](#-file-operations)
+- [🔍 Module Explorer](#-module-explorer)
+- [📝 Logging](#-logging)
+- [🔄 Application Flow](#-application-flow)
+- [📊 Feature Status](#-feature-status)
+- [🎓 Learning Outcomes](#-learning-outcomes)
+- [🔮 Future Improvements](#-future-improvements)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
 
 ---
 
-## 🌟 About the Project
+# ✨ About the Project
 
-**Personal Journal Manager** is a simple command-line application built with Python. It allows users to maintain a digital journal directly from the terminal without requiring a database or external packages.
+**Moduler-Packager** is a command-line **Multi-Utility Toolkit built with Python**.
 
-Journal entries are stored in a file named `journal.txt`. Every new entry is automatically prefixed with the current date and time, making it easier to keep track of when thoughts and memories were recorded.
+Instead of creating separate programs for common tasks, this project brings multiple utilities together through a single interactive menu.
 
-This project demonstrates how Python classes, functions, file handling, exception handling, date and time operations, and menu-driven programming can work together in a practical application.
+The application currently provides:
 
-## ✨ Features
+- Date and time utilities
+- Mathematical calculations
+- Unit conversions
+- Random data generation
+- Password and OTP generation
+- Dice game
+- UUID generation
+- Invoice and session IDs
+- File creation and manipulation
+- Python module attribute exploration
+- Automatic activity logging
 
-- ✍️ **Add a New Entry** — Write and save a journal entry.
-- 🕒 **Automatic Timestamps** — Each entry includes the date and time it was created.
-- 📖 **View All Entries** — Display saved journal entries in the terminal.
-- 🔍 **Search Entries** — Find entries by a keyword or date.
-- 🗑️ **Delete All Entries** — Remove the journal file after confirmation.
-- 🔁 **Interactive Menu** — Choose actions from a numbered menu.
-- 🛡️ **Basic Error Handling** — Handles invalid menu input and common file errors.
-- 📄 **Local Text Storage** — Stores entries in `journal.txt` in the working directory.
+The main application imports reusable utilities from the `toolkit` package and presents them through an easy-to-use terminal interface.
 
-## ⚙️ How It Works
+---
 
-1. The program displays a welcome message and a menu.
-2. The user selects an option from the menu.
-3. The `journalmanager` class performs the selected operation.
-4. Entries are saved to or read from `journal.txt`.
-5. The menu repeats until the user selects **Exit**.
+# 🚀 Features
 
-### Available Operations
-
-| Option | Operation | Description |
+| Feature | Description | Status |
 |---|---|---|
-| 1 | Add a New Entry | Saves a new entry with a timestamp. |
-| 2 | View All Entries | Displays the contents of the journal file. |
-| 3 | Search for an Entry | Searches entry text and timestamps for a keyword. |
-| 4 | Delete All Entries | Deletes the journal file after confirmation. |
-| 5 | Exit | Closes the application. |
+| 📅 Datetime Utilities | Current time, date difference, formatting, stopwatch, countdown and working hours | ✅ |
+| 🧮 Mathematics | Factorial, compound interest, trigonometry, areas, logarithms and number operations | ✅ |
+| 🔄 Unit Conversion | Distance, weight and temperature conversions | ✅ |
+| 🎲 Random Data | Numbers, lists, passwords, OTPs, sampling and dice game | ✅ |
+| 🆔 UUID Generator | UUID, invoice ID and session ID generation | ✅ |
+| 📁 File Operations | Create, write, read, append and replace file content | ✅ |
+| 🔍 Module Explorer | Explore public attributes of Python modules | ✅ |
+| 📝 Activity Logging | Saves toolkit activity to a log file | ✅ |
+| 💻 CLI Interface | Interactive terminal-based menus | ✅ |
+| 🧩 Modular Design | Utilities are separated into reusable modules | ✅ |
 
-## 🧰 Technologies Used
+---
 
-- **Python 3**
-- `datetime` — Generates formatted timestamps.
-- `os` — Removes the journal file when requested.
-- **Text file handling** — Saves and reads journal entries.
-- **Object-Oriented Programming (OOP)** — Groups journal operations in a class.
+# 🧩 Available Modules
 
-No third-party Python packages are required.
-
-## 📂 Project Structure
+The toolkit is organized around reusable modules such as:
 
 ```text
-Personal-Journal-Manager/
+toolkit/
+├── datetime_utils.py
+├── math_utils.py
+├── random_utils.py
+├── uuid_utils.py
+├── file_ops.py
+└── unit_utils.py
+```
+
+The main program imports these modules and uses their functions rather than placing every operation directly inside `main.py`.
+
+This makes the project easier to understand, maintain and extend.
+
+---
+
+# 🛠️ Technologies Used
+
+### Programming Language
+
+- 🐍 Python 3
+
+### Python Concepts
+
+- Functions
+- Modules
+- Packages
+- Imports
+- Loops
+- Conditional statements
+- Exception handling
+- User input
+- String manipulation
+- File handling
+- `importlib`
+- `dir()`
+- Random number generation
+- Date and time operations
+
+### Standard Libraries
+
+The project uses Python's standard library and does not require third-party packages.
+
+Examples include:
+
+```python
+datetime
+math
+random
+uuid
+os
+importlib
+time
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+Moduler-Packager/
 │
-├── journal_manager.py   # Main Python program
-├── journal.txt          # Created automatically when the first entry is saved
-└── README.md            # Project documentation
+├── main.py
+│
+├── toolkit/
+│   ├── datetime_utils.py
+│   ├── math_utils.py
+│   ├── random_utils.py
+│   ├── uuid_utils.py
+│   ├── file_ops.py
+│   └── unit_utils.py
+│
+├── USER_GUIDE.md
+├── sample_output.txt
+├── toolkit_log.txt
+├── .gitignore
+└── README.md
 ```
 
-> The Python filename shown above is an example. Use the actual filename you saved your code as.
+### `main.py`
 
-## 📋 Requirements
+The main entry point of the application.
 
-- Python 3.8 or newer recommended
-- A terminal or command prompt
-- Any Python editor, such as VS Code
+It:
 
-## 🚀 Installation and Setup
+- Displays the main menu
+- Takes user input
+- Opens the required submenu
+- Calls functions from the toolkit modules
+- Handles invalid input
+- Controls the overall program flow
 
-### 1. Clone the Repository
+### `toolkit/`
 
-Replace the placeholder URL with your repository URL.
+Contains the reusable utility modules.
+
+### `USER_GUIDE.md`
+
+Provides a quick guide explaining how to use the toolkit and its available operations.
+
+### `sample_output.txt`
+
+Contains example program output.
+
+### `toolkit_log.txt`
+
+Stores activity logs generated while using the application.
+
+---
+
+# ⚙️ Requirements
+
+You need:
+
+- Python 3.x
+- Terminal / Command Prompt
+- VS Code or another Python editor
+
+No external Python packages are required.
+
+---
+
+# 📥 Installation
+
+## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/Rami-Manan/Moduler-Packager.git
 ```
 
-### 2. Open the Project Folder
+## 2. Enter the Project Directory
 
 ```bash
-cd YOUR-REPOSITORY
+cd Moduler-Packager
 ```
 
-Alternatively, open the folder directly in Visual Studio Code.
-
-### 3. Run the Program
-
-If your Python file is named `journal_manager.py`, run:
+## 3. Verify Python
 
 ```bash
-python journal_manager.py
+python --version
 ```
 
-On some systems, you may need:
+If your system uses `python3`:
 
 ```bash
-python3 journal_manager.py
+python3 --version
 ```
 
-No package installation is needed because the program uses Python's standard library.
+---
 
-## 🖥️ Usage
+# ▶️ How to Run
 
-When the program starts, choose an option from the main menu:
+Run the main program:
+
+```bash
+python main.py
+```
+
+On systems using `python3`:
+
+```bash
+python3 main.py
+```
+
+The toolkit will display the main menu.
+
+---
+
+# 🖥️ Main Menu
+
+When the program starts, it provides the following options:
 
 ```text
-Welcome to Personal Journal Manager!
-Please select an option.
+========================================
+Welcome to Multi-Utility Toolkit
+========================================
 
-1. Add a New Entry
-2. View all Entries
-3. Search for an Entry
-4. Delete all Entries
-5. Exit
-user Input:
+Choose an option:
+
+1. Datetime and Time Operations
+2. Mathematical Operations
+3. Random Data Generation
+4. Generate Unique Identifiers (UUID)
+5. File Operations (Custom Module)
+6. Explore Module Attributes (dir())
+7. Exit
 ```
 
-### ✍️ Add a New Entry
+Choose an option by entering its corresponding number.
 
-Select `1` and type your journal entry.
+---
+
+# 📅 Datetime & Time Operations
+
+Select:
 
 ```text
-Enter your journal entry:
-Today I learned how to use file handling in Python.
-Entry added successfully.
+1. Datetime and Time Operations
 ```
 
-The saved line will look similar to this:
+Available operations:
+
+| Option | Operation |
+|---|---|
+| 1 | Display current date and time |
+| 2 | Calculate difference between two dates |
+| 3 | Format date into a custom format |
+| 4 | Stopwatch |
+| 5 | Countdown Timer |
+| 6 | Working Hours Calculator |
+| 7 | Back to Main Menu |
+
+### Example
 
 ```text
-[2026-10-04 20:30:15] Today I learned how to use file handling in Python.
+Current Date and Time: 2026-10-05 09:30:20
 ```
 
-*The timestamp above is an example; the program uses the actual date and time when you create an entry.*
-
-### 📖 View All Entries
-
-Select `2` to display all entries saved in `journal.txt`.
+Date differences can be calculated using dates such as:
 
 ```text
-Your Journal Entries:
--------------------------------------
-[2026-10-04 20:30:15] Today I learned how to use file handling in Python.
+2026-10-01
+2026-10-05
 ```
 
-### 🔍 Search for an Entry
+The toolkit also supports custom date formatting.
 
-Select `3`, then enter a keyword or date.
+Example:
 
 ```text
-Enter keyword or date to search: Python
-[2026-10-04 20:30:15] Today I learned how to use file handling in Python.
+%d/%m/%Y
 ```
 
-The search is case-insensitive and checks each complete saved line.
+---
 
-### 🗑️ Delete All Entries
+# 🧮 Mathematical Operations
 
-Select `4` to request deletion of all journal entries.
+Select:
 
 ```text
-Are you sure you want to delete all entries? (yes/no): yes
-All journal entries have been deleted.
+2. Mathematical Operations
 ```
 
-**Warning:** Confirming deletion removes `journal.txt`, including all entries stored in it. Keep a backup if you want to preserve your journal.
+Available operations include:
 
-### 🚪 Exit
+- Factorial
+- Compound interest
+- Trigonometric calculations
+- Area of geometric shapes
+- Logarithms
+- Unit conversions
+- GCD
+- LCM
+- Prime-number checking
 
-Select `5` to close the application.
+### Example
 
 ```text
-Thank you for using Personal Journal Manager. Goodbye!
+Mathematical Operations:
+
+1. Calculate Factorial
+2. Solve Compound Interest
+3. Trigonometric Calculations
+4. Area of Geometric Shapes
+5. Logarithm
+6. Unit Conversions
+7. GCD, LCM and Prime Check
+8. Back to Main Menu
 ```
 
-## 🎓 Learning Outcomes
+### Geometric Areas
 
-By building this project, you can practise:
+The toolkit supports:
 
-- ✅ Object-Oriented Programming and classes
-- ✅ Constructors and instance attributes
-- ✅ Functions and method calls
-- ✅ File handling: reading, appending, and deleting files
-- ✅ Exception handling with `try` and `except`
-- ✅ Date and time formatting using `datetime`
-- ✅ Conditional statements and loops
-- ✅ User input validation
-- ✅ Case-insensitive string searching
-- ✅ Building a menu-driven command-line application
+- Circle
+- Rectangle
+- Triangle
+- Square
 
-## 🌱 Future Improvements
+---
 
-Possible features for future versions include:
+# 🔄 Unit Conversions
 
-- 🔐 Password protection for private entries
-- 🏷️ Categories and tags
-- 📅 Calendar-based journal browsing
-- ✏️ Edit an existing entry
-- 🧾 Delete a selected entry instead of all entries
-- 📤 Export entries to PDF or JSON
-- 😊 Mood tracking
-- 🔎 Search by date range
-- 🖥️ A graphical user interface (GUI)
-- 🗄️ SQLite database storage
-- ☁️ Encrypted backup and cloud synchronisation
+The conversion utility supports:
 
-## ⭐ Why This Project?
+### Distance
 
-Personal Journal Manager is a small but practical beginner Python project. It turns basic concepts—classes, loops, conditions, timestamps, and file handling—into a useful application.
+```text
+Kilometres → Miles
+Miles → Kilometres
+```
 
-It is suitable for learners who want to move from individual Python exercises to a complete project that can be documented and shared on GitHub.
+### Weight
 
-## 🌟 Support
+```text
+Kilograms → Pounds
+Pounds → Kilograms
+```
+
+### Temperature
+
+```text
+Celsius → Fahrenheit
+Fahrenheit → Celsius
+```
+
+Example:
+
+```text
+Enter value: 10
+
+Result: 6.21
+```
+
+---
+
+# 🎲 Random Data Generation
+
+Select:
+
+```text
+3. Random Data Generation
+```
+
+Available operations:
+
+| Option | Feature |
+|---|---|
+| 1 | Generate Random Number |
+| 2 | Generate Random List |
+| 3 | Create Random Password |
+| 4 | Generate Random OTP |
+| 5 | Random Sampling from Data |
+| 6 | Dice Game |
+| 7 | Back to Main Menu |
+
+### 🎯 Random Number
+
+Generate a number between a minimum and maximum value.
+
+### 🔐 Random Password
+
+Generate a password based on the requested length.
+
+### 🔢 Random OTP
+
+Generate an OTP with the requested number of digits.
+
+### 🎲 Dice Game
+
+Play multiple rounds against the computer.
+
+Example:
+
+```text
+Round 1 - You: 5 Computer: 2 -> You Win
+Round 2 - You: 3 Computer: 6 -> Computer Wins
+```
+
+---
+
+# 🆔 Unique Identifier Generation
+
+Select:
+
+```text
+4. Generate Unique Identifiers (UUID)
+```
+
+The toolkit can generate:
+
+- UUID
+- Invoice ID
+- Session ID
+
+Example:
+
+```text
+Generate Unique Identifiers:
+
+1. Generate UUID
+2. Generate Invoice ID
+3. Generate Session ID
+4. Back to Main Menu
+```
+
+This demonstrates how unique identifiers can be generated programmatically.
+
+---
+
+# 📁 File Operations
+
+Select:
+
+```text
+5. File Operations (Custom Module)
+```
+
+Available operations:
+
+| Option | Operation |
+|---|---|
+| 1 | Create a new file |
+| 2 | Write to a file |
+| 3 | Read from a file |
+| 4 | Append to a file |
+| 5 | Replace text in a file |
+| 6 | Back to Main Menu |
+
+### Create a File
+
+```text
+Enter file name: example.txt
+File created successfully!
+```
+
+### Write to a File
+
+```text
+Enter file name: example.txt
+Enter data to write: Hello Python
+Data written successfully!
+```
+
+### Read a File
+
+```text
+File Content:
+Hello Python
+```
+
+### Append Data
+
+Additional data can be added without replacing the existing content.
+
+### Replace Text
+
+The toolkit can search for specified text and replace it with new text.
+
+---
+
+# 🔍 Module Explorer
+
+Select:
+
+```text
+6. Explore Module Attributes (dir())
+```
+
+This feature demonstrates Python's dynamic module inspection capabilities.
+
+The user can enter a module name such as:
+
+```text
+math
+```
+
+or a project module such as:
+
+```text
+toolkit.math_utils
+```
+
+The program imports the module using `importlib` and uses `dir()` to display its publicly accessible attributes.
+
+Example:
+
+```text
+Enter module name to explore: math
+
+Available Attributes in math module:
+[...]
+```
+
+This is particularly useful for learning how Python modules can be inspected programmatically.
+
+---
+
+# 📝 Logging
+
+The application records activities in:
+
+```text
+toolkit_log.txt
+```
+
+Examples of logged actions include:
+
+```text
+Program started
+Showed current date and time
+Random number generated
+Conversion performed
+File created
+File read
+Program closed
+```
+
+This provides a basic example of maintaining an application activity log.
+
+---
+
+# 🔄 Application Flow
+
+```mermaid
+flowchart TD
+
+    A[Start Program] --> B[Display Main Menu]
+
+    B --> C{Choose Option}
+
+    C -->|1| D[Datetime & Time]
+    C -->|2| E[Mathematical Operations]
+    C -->|3| F[Random Data Generation]
+    C -->|4| G[Unique Identifiers]
+    C -->|5| H[File Operations]
+    C -->|6| I[Module Explorer]
+    C -->|7| J[Exit]
+
+    D --> B
+    E --> B
+    F --> B
+    G --> B
+    H --> B
+    I --> B
+
+    J --> K[Save Exit Log]
+    K --> L[End Program]
+```
+
+---
+
+# 🏗️ Architecture
+
+The project follows a simple modular architecture:
+
+```text
+                    ┌─────────────────────┐
+                    │      User / CLI     │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │       main.py       │
+                    │   Main Menu / Flow  │
+                    └──────────┬──────────┘
+                               │
+             ┌─────────────────┼──────────────────┐
+             │                 │                  │
+             ▼                 ▼                  ▼
+     ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+     │ datetime_utils│  │  math_utils  │  │ random_utils │
+     └──────────────┘  └──────────────┘  └──────────────┘
+             │                 │                  │
+             └─────────────────┼──────────────────┘
+                               │
+             ┌─────────────────┼──────────────────┐
+             ▼                 ▼                  ▼
+     ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+     │  uuid_utils  │  │   file_ops   │  │  unit_utils  │
+     └──────────────┘  └──────────────┘  └──────────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ toolkit_log.txt     │
+                    └─────────────────────┘
+```
+
+### Why modular design?
+
+Instead of putting every function into one large Python file, related functionality is separated into individual modules.
+
+For example:
+
+```text
+datetime_utils.py
+```
+
+handles date/time functionality, while:
+
+```text
+math_utils.py
+```
+
+handles mathematical operations.
+
+This makes the project easier to:
+
+- Read
+- Debug
+- Maintain
+- Reuse
+- Extend
+
+---
+
+# 📊 Feature Status
+
+| Feature | Status |
+|---|---|
+| 📅 Datetime & Time | 100% |
+| 🧮 Mathematical Operations | 100% |
+| 🔄 Unit Conversion | 100% |
+| 🎲 Random Data Generation | 100% |
+| 🆔 UUID Generation | 100% |
+| 📁 File Operations | 100% |
+| 🔍 Module Explorer | 100% |
+| 📝 Activity Logging | 100% |
+| 💻 Command-Line Interface | 100% |
+
+---
+
+# 🛡️ Error Handling
+
+The application includes basic error handling for invalid input and common operation failures.
+
+For example:
+
+```text
+Invalid input, please try again.
+```
+
+File operations also handle missing files:
+
+```text
+File not found. Create it first.
+```
+
+This prevents common user mistakes from immediately terminating the application.
+
+---
+
+# 🎓 Learning Outcomes
+
+This project is useful for practising several important Python concepts:
+
+### 🐍 Python Fundamentals
+
+- Variables
+- Functions
+- Loops
+- Conditional statements
+- User input
+- String operations
+
+### 🧩 Modular Programming
+
+- Creating modules
+- Importing modules
+- Organizing related functions
+- Reusing code
+
+### 📁 File Handling
+
+- Creating files
+- Reading files
+- Writing files
+- Appending data
+- Replacing content
+
+### ⚠️ Exception Handling
+
+- `try`
+- `except`
+- `ValueError`
+- `FileNotFoundError`
+- Input validation
+
+### 🔎 Python Introspection
+
+- `importlib`
+- `dir()`
+- Dynamic module importing
+
+### 🧮 Practical Programming
+
+- Mathematical formulas
+- Date calculations
+- Random data generation
+- Unique identifier generation
+- Unit conversions
+
+---
+
+# 🔮 Future Improvements
+
+Possible improvements for future versions:
+
+- [ ] Add a graphical user interface
+- [ ] Add configuration settings
+- [ ] Add more mathematical utilities
+- [ ] Add currency conversion
+- [ ] Add more file-management operations
+- [ ] Add JSON and CSV support
+- [ ] Add automated unit tests
+- [ ] Add command-line arguments
+- [ ] Add colored terminal output
+- [ ] Add package installation support
+- [ ] Add proper Python package metadata
+- [ ] Add CI/CD with GitHub Actions
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+### 1. Fork the repository
+
+```bash
+git clone https://github.com/Rami-Manan/Moduler-Packager.git
+```
+
+### 2. Create a new branch
+
+```bash
+git checkout -b feature/new-utility
+```
+
+### 3. Make your changes
+
+Add or improve a utility while keeping the modular project structure.
+
+### 4. Commit your changes
+
+```bash
+git add .
+git commit -m "Add new utility"
+```
+
+### 5. Push your branch
+
+```bash
+git push origin feature/new-utility
+```
+
+### 6. Open a Pull Request
+
+Describe what you changed and why.
+
+---
+
+# 📜 License
+
+If a license file has not yet been added to the repository, add an appropriate open-source license before presenting the project as officially licensed.
+
+---
+
+# 👨‍💻 Author
+
+**Manan Rami**
+
+GitHub:
+
+**Rami-Manan**
+
+Repository:
+
+`https://github.com/Rami-Manan/Moduler-Packager`
+
+---
+
+# ⭐ Support the Project
 
 If you find this project useful:
 
-- ⭐ Star the repository.
-- 🍴 Fork it and experiment with new features.
-- 💻 Run the project and explore how it works.
-- 📣 Share it with other Python learners.
+⭐ Star the repository  
+🍴 Fork it  
+🐛 Report issues  
+💡 Suggest new utilities  
+🤝 Contribute improvements
 
 ---
 
-## 👤 Author
+## 🧰 Built with Python
 
-**[Manan Rami]**
+```text
+Python
+   │
+   ├── Datetime Utilities
+   ├── Mathematical Utilities
+   ├── Random Utilities
+   ├── UUID Utilities
+   ├── File Utilities
+   └── Unit Utilities
+            │
+            ▼
+      Multi-Utility Toolkit
+```
 
-🐍 Python Learner | 💻 Programmer
-
-- GitHub: [Your GitHub Profile](https://github.com/)
-
-> Replace the author name, GitHub username, repository URL, and example filename with your own project details before publishing.
-
----
-
-<div align="center">
-
-**Made with ❤️ and Python 🐍**
-
-*Write your thoughts. Save your memories.*
-
-</div>
+**One CLI. Multiple utilities. Modular Python. 🚀**
